@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#123B5D">
+
+    <title>Crear cuenta | Sistema de Inventario</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="contenedor">
+        <section class="tarjeta">
+
+            <div class="logo">I</div>
+
+            <p class="etiqueta">SISTEMA DE INVENTARIO</p>
+
+            <h1>Activa tu cuenta</h1>
+
+            <p class="descripcion">
+                Bienvenido. Crea una contraseña para completar
+                tu registro como técnico.
+            </p>
+
+            <div id="mensaje" class="mensaje" role="status"
+                 aria-live="polite">
+                Estamos preparando la validación de tu invitación.
+            </div>
+
+            <form id="formulario-registro">
+
+                <label for="password">
+                    Nueva contraseña
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Mínimo 8 caracteres"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                    disabled
+                >
+
+                <label for="confirmar-password">
+                    Confirmar contraseña
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmar-password"
+                    name="confirmar-password"
+                    placeholder="Escribe la contraseña otra vez"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                    disabled
+                >
+
+                <p class="ayuda">
+                    Utiliza al menos 8 caracteres y evita reutilizar
+                    contraseñas de otros servicios.
+                </p>
+
+                <button id="boton-registro" type="submit" disabled>
+                    Crear cuenta
+                </button>
+
+            </form>
+
+            <p class="nota-seguridad">
+                Tu cuenta se creará después de verificar tu invitación.
+            </p>
+
+            <p class="pie">
+                Si no esperabas esta invitación, puedes cerrar esta página.
+            </p>
+
+        </section>
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
